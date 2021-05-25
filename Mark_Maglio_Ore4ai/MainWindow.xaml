@@ -1,0 +1,42 @@
+﻿<Window x:Class="Mark_Maglio_Ore4ai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mark_Maglio_Ore4ai"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="400">
+    <Grid>  
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Green" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <Label Content="ORE DI LEZIONE PER MATERIA" Foreground="White" FontSize="24" FontWeight="Bold" ></Label>
+        </StackPanel>
+        
+        <Label Grid.Row="1" Grid.Column="0" Content="scegli la materia" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cmbMaterie" Width="120" VerticalAlignment="Center"></ComboBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Inserisci l'argomento" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"></Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="19" Width="180" x:Name="TxtArgomento" HorizontalAlignment="Center" VerticalAlignment="Top"></TextBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="N°ore" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <TextBox Grid.Row="2" Grid.Column="1" Height="19" Width="180" x:Name="TxtOre" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+        <Button x:Name="Btn_Inserisci" Content="Inserisci" Grid.Row="3" Grid.ColumnSpan="2" Height="25" Width="100" VerticalAlignment="Top"></Button>
+        
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Riepilogo" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+        <TextBox Grid.Row="3" Grid.ColumnSpan="2" Grid.RowSpan="3" Height="160" Width="300" x:Name="TxtRiepilogo" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+
+        <Button x:Name="Btn_Ore" Content="Ore Materie" Grid.Row="5" Grid.ColumnSpan="2" Height="30" Width="100" VerticalAlignment="Center"></Button>
+    </Grid>
+</Window>
